@@ -1,8 +1,8 @@
 import { ConfigService } from '@nestjs/config'
 import { NestFactory } from '@nestjs/core'
 
-import { setupGrpc } from './bootstrap/grpc'
 import { AppModule } from './core/app.module'
+import { setupGrpc } from './core/bootstrap/grpc'
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule)
